@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In – DSR Food Court</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial; background-color: #fcefe8; padding: 2rem; }
+        h2 { color: #d94141; }
+        form { max-width: 400px; margin: auto; }
+        input { width: 100%; padding: 0.6rem; margin: 0.5rem 0; }
+        button { padding: 0.6rem 1rem; background-color: #d94141; color: white; border: none; cursor: pointer; }
+        .toggle-link { text-align: center; margin-top: 1rem; color: blue; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<h2 id="form-title">Sign In</h2>
+<form id="auth-form">
+    <input type="text" id="name" placeholder="Your Name (only for Register)" style="display:none;">
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Submit</button>
+</form>
+<div class="toggle-link" onclick="toggleForm()">Don’t have an account? Register here</div>
+
+</body>
+</html>

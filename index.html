@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DSR Food Court</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff8f0; }
+        header, footer { background-color: #d94141; color: white; text-align: center; padding: 1rem 0; }
+        nav a { margin: 0 1rem; color: white; text-decoration: none; }
+        .container { padding: 2rem; }
+        .menu-item { margin-bottom: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem; }
+        .menu-item h3 { margin: 0.2rem 0; }
+        .order-btn, .signin-btn { background-color: #d94141; color: white; padding: 0.5rem 1rem; border: none; cursor: pointer; margin-top: 0.5rem; }
+        .signin-btn { float: right; margin: 1rem; }
+        footer a { color: white; margin: 0 0.5rem; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DSR Food Court</h1>
+    <p>The Best Biryani in Sompeta!</p>
+    <div style="margin: 1rem;">
+        <span id="welcome-user"></span>
+        <button class="signin-btn" onclick="handleAuth()">
+            <span id="auth-btn-label">Sign In</span>
+        </button>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container" id="home">
+    <h2>Welcome to DSR Food Court</h2>
+    <p>Authentic, spicy, and satisfying – our biryanis are made with love and tradition. Order online or visit us at Sompeta Main Road!</p>
+</div>
+
+<div class="container" id="menu">
+    <h2>Our Biryani Menu</h2>
+
+    <div class="menu-item">
+        <h3>Chicken Dum Biryani</h3>
+        <p>Fragrant rice and tender chicken cooked on slow flame.</p>
+        <button class="order-btn">Add to Order</button>
+    </div>
+
+    <div class="menu-item">
+        <h3>Mutton Biryani</h3>
+        <p>Juicy mutton blended with flavorful basmati rice.</p>
+        <button class="order-btn">Add to Order</button>
+    </div>
+
+    <div class="menu-item">
+        <h3>Veg Biryani</h3>
+        <p>Loaded with fresh vegetables and spices.</p>
+        <button class="order-btn">Add to Order</button>
+    </div>
+
+    <div class="menu-item">
+        <h3>Special DSR Chicken Biryani</h3>
+        <p>Our signature dish – spicy and rich in taste.</p>
+        <button class="order-btn">Add to Order</button>
+    </div>
+</div>
+
+<div class="container" id="order">
+    <h2>Order Now</h2>
+    <p>Sign in to place your order and choose delivery or pickup.</p>
+    <button class="order-btn">Sign In to Order</button>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Proprietor:</strong> Duryodhana</p>
+    <p><strong>Phone:</strong> 7569288411, 9494020127</p>
+    <p><strong>Address:</strong> Sompeta Main Road</p>
+    <p><strong>Follow us on:</strong>
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2025 DSR Food Court. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
