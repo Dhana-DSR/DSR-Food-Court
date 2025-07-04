@@ -1,94 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DSR Food Court</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js" defer></script>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff8f0; }
-        header, footer { background-color: #d94141; color: white; text-align: center; padding: 1rem 0; }
-        nav a { margin: 0 1rem; color: white; text-decoration: none; }
-        .container { padding: 2rem; }
-        .menu-item { margin-bottom: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem; }
-        .menu-item h3 { margin: 0.2rem 0; }
-        .order-btn, .signin-btn { background-color: #d94141; color: white; padding: 0.5rem 1rem; border: none; cursor: pointer; margin-top: 0.5rem; }
-        .signin-btn { float: right; margin: 1rem; }
-        footer a { color: white; margin: 0 0.5rem; text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DSR Food Court | Authentic Biryani Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1606756790032-2913fa7e4812') center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .menu-item img {
+      max-height: 150px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #343a40;
+      color: #ccc;
+      padding: 20px 0;
+    }
+    .social-icons a {
+      color: white;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>DSR Food Court</h1>
-    <p>The Best Biryani in Sompeta!</p>
-    <div style="margin: 1rem;">
-        <span id="welcome-user"></span>
-        <button class="signin-btn" onclick="handleAuth()">
-            <span id="auth-btn-label">Sign In</span>
-        </button>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">DSR Food Court</a>
+    <div>
+      <a href="#" class="btn btn-outline-light me-2">Sign In</a>
+      <a href="#" class="btn btn-outline-light">Sign Out</a>
     </div>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#order">Order</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+  </div>
+</nav>
 
-<div class="container" id="home">
-    <h2>Welcome to DSR Food Court</h2>
-    <p>Authentic, spicy, and satisfying – our biryanis are made with love and tradition. Order online or visit us at Sompeta Main Road!</p>
-</div>
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Welcome to DSR Food Court</h1>
+    <p class="lead">Authentic Biryani Delivered to Your Doorstep</p>
+    <a href="#menu" class="btn btn-warning btn-lg mt-3">Order Now</a>
+  </div>
+</section>
 
-<div class="container" id="menu">
-    <h2>Our Biryani Menu</h2>
+<!-- Menu Section -->
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Biryani Menu</h2>
+    <div class="row g-4">
+      <!-- Sample Menu Items -->
+      <div class="col-md-4 menu-item">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1606755962778-2f5b9bbfa029" class="card-img-top" alt="Chicken Biryani">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Dum Biryani</h5>
+            <p class="card-text">Traditional Hyderabadi style with rich spices and tender chicken.</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
 
-    <div class="menu-item">
-        <h3>Chicken Dum Biryani</h3>
-        <p>Fragrant rice and tender chicken cooked on slow flame.</p>
-        <button class="order-btn">Add to Order</button>
+      <div class="col-md-4 menu-item">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1625758471454-d4fd3594d3a4" class="card-img-top" alt="Mutton Biryani">
+          <div class="card-body">
+            <h5 class="card-title">Mutton Biryani</h5>
+            <p class="card-text">Slow-cooked mutton layered with fragrant basmati rice.</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 menu-item">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1590080875727-5a98e3e88c1d" class="card-img-top" alt="Veg Biryani">
+          <div class="card-body">
+            <h5 class="card-title">Veg Biryani</h5>
+            <p class="card-text">A delightful mix of vegetables, spices, and saffron-infused rice.</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more items as needed -->
     </div>
+  </div>
+</section>
 
-    <div class="menu-item">
-        <h3>Mutton Biryani</h3>
-        <p>Juicy mutton blended with flavorful basmati rice.</p>
-        <button class="order-btn">Add to Order</button>
-    </div>
-
-    <div class="menu-item">
-        <h3>Veg Biryani</h3>
-        <p>Loaded with fresh vegetables and spices.</p>
-        <button class="order-btn">Add to Order</button>
-    </div>
-
-    <div class="menu-item">
-        <h3>Special DSR Chicken Biryani</h3>
-        <p>Our signature dish – spicy and rich in taste.</p>
-        <button class="order-btn">Add to Order</button>
-    </div>
-</div>
-
-<div class="container" id="order">
-    <h2>Order Now</h2>
-    <p>Sign in to place your order and choose delivery or pickup.</p>
-    <button class="order-btn">Sign In to Order</button>
-</div>
-
-<div class="container" id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Proprietor:</strong> Duryodhana</p>
-    <p><strong>Phone:</strong> 7569288411, 9494020127</p>
-    <p><strong>Address:</strong> Sompeta Main Road</p>
-    <p><strong>Follow us on:</strong>
-        <a href="https://facebook.com" target="_blank">Facebook</a> |
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+<!-- About Section -->
+<section class="py-5 bg-light" id="about">
+  <div class="container">
+    <h2 class="text-center mb-4">About DSR Food Court</h2>
+    <p class="text-center mx-auto" style="max-width: 800px;">
+      DSR Food Court, founded by Duryodhana, is located on Sompeta Main Road. We are known for our authentic, flavorful biryanis that bring together tradition, taste, and quality. Order online and enjoy our freshly prepared dishes delivered to your home.
     </p>
-</div>
+  </div>
+</section>
 
-<footer>
-    <p>&copy; 2025 DSR Food Court. All Rights Reserved.</p>
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Phone</h5>
+        <p>📞 7569288411<br>📞 9494020127</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Address</h5>
+        <p>📍 Sompeta Main Road</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="#" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 DSR Food Court. All rights reserved.</p>
+  </div>
 </footer>
 
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
 </html>
