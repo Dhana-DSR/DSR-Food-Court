@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,38 +34,67 @@
 
   <section id="menu">
     <h2>🍽️ Our Menu</h2>
+
     <h3>Biryani Specials</h3>
     <ul>
-      <li><img src="images/biryani1.jpg" alt="DSR Special Biryani"><strong>DSR Special Biryani</strong> – Chicken, mutton, egg mix with special masala – ₹250</li>
-      <li><img src="images/biryani2.jpg" alt="Chicken Dum Biryani"><strong>Chicken Dum Biryani</strong> – Marinated chicken with layered rice – ₹180</li>
-      <li><img src="images/biryani3.jpg" alt="Mutton Biryani"><strong>Mutton Biryani</strong> – Tender mutton cooked with spices – ₹240</li>
-      <li><img src="images/biryani4.jpg" alt="Egg Biryani"><strong>Egg Biryani</strong> – Rice with eggs & masala – ₹150</li>
-      <li><img src="images/biryani5.jpg" alt="Paneer Biryani"><strong>Paneer Biryani</strong> – Vegetarian biryani with paneer – ₹160</li>
+      <li><strong>DSR Special Biryani</strong> – Chicken, mutton, egg mix with special masala – ₹250</li>
+      <li><strong>Chicken Dum Biryani</strong> – Marinated chicken with layered rice – ₹180</li>
+      <li><strong>Mutton Biryani</strong> – Tender mutton cooked with spices – ₹240</li>
+      <li><strong>Egg Biryani</strong> – Rice with eggs & masala – ₹150</li>
+      <li><strong>Paneer Biryani</strong> – Vegetarian biryani with paneer – ₹160</li>
     </ul>
+
     <h3>Chicken Delights</h3>
     <ul>
-      <li><img src="images/chicken1.jpg" alt="Chicken Lollipop">Chicken Lollipop – ₹160 (6 pcs)</li>
-      <li><img src="images/chicken2.jpg" alt="Chicken 65">Chicken 65 – ₹150</li>
-      <li><img src="images/chicken3.jpg" alt="Lemon Chicken">Lemon Chicken – ₹160</li>
-      <li><img src="images/chicken4.jpg" alt="Garlic Chicken">Garlic Chicken – ₹160</li>
-      <li><img src="images/chicken5.jpg" alt="Honey Chicken">Honey Chicken – ₹170</li>
-      <li><img src="images/chicken6.jpg" alt="Chicken Manchurian">Chicken Manchurian – ₹170</li>
+      <li>Chicken Lollipop – ₹160 (6 pcs)</li>
+      <li>Chicken 65 – ₹150</li>
+      <li>Lemon Chicken – ₹160</li>
+      <li>Garlic Chicken – ₹160</li>
+      <li>Honey Chicken – ₹170</li>
+      <li>Chicken Manchurian – ₹170</li>
     </ul>
+
     <h3>Momos</h3>
     <ul>
-      <li><img src="images/momo1.jpg" alt="Steamed Chicken Momos">Chicken Momos (Steamed) – ₹100</li>
-      <li><img src="images/momo2.jpg" alt="Fried Chicken Momos">Chicken Momos (Fried) – ₹110</li>
-      <li><img src="images/momo3.jpg" alt="Veg Momos">Veg Momos (Steamed) – ₹80</li>
-      <li><img src="images/momo4.jpg" alt="Tandoori Momos">Tandoori Momos – ₹120</li>
+      <li>Chicken Momos (Steamed) – ₹100</li>
+      <li>Chicken Momos (Fried) – ₹110</li>
+      <li>Veg Momos (Steamed) – ₹80</li>
+      <li>Tandoori Momos – ₹120</li>
     </ul>
   </section>
 
   <section id="order">
     <h2>🛒 Order Online</h2>
-    <p>Real-time order system is integrated using Google Sheets. Click below to place your order.</p>
+    <p>Select your favorite item from the dropdown and place your order. We’ll contact you to confirm!</p>
+
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSf_fake_form" method="POST" target="_blank">
       <input type="text" name="name" placeholder="Your Name" required>
-      <input type="text" name="item" placeholder="Your Order (e.g., Chicken Biryani)" required>
+
+      <select name="item" required>
+        <option value="" disabled selected>Select your item</option>
+
+        <!-- Biryani Items -->
+        <option value="DSR Special Biryani">DSR Special Biryani – ₹250</option>
+        <option value="Chicken Dum Biryani">Chicken Dum Biryani – ₹180</option>
+        <option value="Mutton Biryani">Mutton Biryani – ₹240</option>
+        <option value="Egg Biryani">Egg Biryani – ₹150</option>
+        <option value="Paneer Biryani">Paneer Biryani – ₹160</option>
+
+        <!-- Chicken Items -->
+        <option value="Chicken Lollipop">Chicken Lollipop – ₹160</option>
+        <option value="Chicken 65">Chicken 65 – ₹150</option>
+        <option value="Lemon Chicken">Lemon Chicken – ₹160</option>
+        <option value="Garlic Chicken">Garlic Chicken – ₹160</option>
+        <option value="Honey Chicken">Honey Chicken – ₹170</option>
+        <option value="Chicken Manchurian">Chicken Manchurian – ₹170</option>
+
+        <!-- Momos -->
+        <option value="Chicken Momos (Steamed)">Chicken Momos (Steamed) – ₹100</option>
+        <option value="Chicken Momos (Fried)">Chicken Momos (Fried) – ₹110</option>
+        <option value="Veg Momos (Steamed)">Veg Momos (Steamed) – ₹80</option>
+        <option value="Tandoori Momos">Tandoori Momos – ₹120</option>
+      </select>
+
       <input type="tel" name="phone" placeholder="Your Phone Number" required>
       <button type="submit">Place Order</button>
     </form>
