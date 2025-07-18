@@ -1,140 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Best Biryani and Chicken Spot in Sompeta – Order Online from DSR Food Court">
   <title>DSR Food Court</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff9f5;
-      color: #333;
-    }
-    header {
-      background-color: #ff6b01;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      background-color: #ffa94d;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    .menu-category {
-      margin-bottom: 2rem;
-    }
-    .menu-category h2 {
-      color: #d35400;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      padding: 0.5rem 0;
-      border-bottom: 1px dashed #ccc;
-    }
-    .contact-info a {
-      color: #d35400;
-      text-decoration: none;
-    }
-    footer {
-      background-color: #f2f2f2;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    .social-icons a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <header>
     <h1>DSR Food Court</h1>
-    <p>Your destination for delicious biryanis, chicken delights & momos!</p>
+    <p>Delicious Biryani | Chicken Specials | Momos</p>
   </header>
 
-  <nav>
-    <a href="#menu">Menu</a>
-    <a href="#contact">Contact</a>
-    <a href="https://www.facebook.com/dhanadcruz" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/dhanadcruz" target="_blank">Instagram</a>
-  </nav>
-
-  <section id="menu">
-    <h2>Our Menu</h2>
-
-    <div class="menu-category">
-      <h3>Biryani Items</h3>
-      <ul>
-        <li>Chicken Biryani</li>
-        <li>Mutton Biryani</li>
-        <li>Egg Biryani</li>
-        <li>Veg Biryani</li>
-        <li>Special Family Biryani</li>
-      </ul>
+  <section class="menu">
+    <h2>Biryani Menu</h2>
+    <div class="items">
+      <div class="item"><h3>Chicken Biryani</h3><p>₹180</p><button>Order Now</button></div>
+      <div class="item"><h3>Mutton Biryani</h3><p>₹250</p><button>Order Now</button></div>
+      <div class="item"><h3>Egg Biryani</h3><p>₹150</p><button>Order Now</button></div>
+      <div class="item"><h3>Veg Biryani</h3><p>₹130</p><button>Order Now</button></div>
+      <div class="item"><h3>Special Family Pack</h3><p>₹499</p><button>Order Now</button></div>
     </div>
 
-    <div class="menu-category">
-      <h3>Chicken Items</h3>
-      <ul>
-        <li>Chicken Lollipop</li>
-        <li>Chicken 65</li>
-        <li>Chicken Fry</li>
-        <li>Tandoori Chicken</li>
-        <li>Chicken Manchurian</li>
-      </ul>
+    <h2>Chicken Items</h2>
+    <div class="items">
+      <div class="item"><h3>Tandoori Chicken</h3><p>₹220</p><button>Order Now</button></div>
+      <div class="item"><h3>Chicken 65</h3><p>₹180</p><button>Order Now</button></div>
+      <div class="item"><h3>Chicken Lollipop</h3><p>₹190</p><button>Order Now</button></div>
+      <div class="item"><h3>Grilled Chicken</h3><p>₹240</p><button>Order Now</button></div>
+      <div class="item"><h3>Chicken Wings</h3><p>₹170</p><button>Order Now</button></div>
     </div>
 
-    <div class="menu-category">
-      <h3>Momos</h3>
-      <ul>
-        <li>Veg Momos</li>
-        <li>Chicken Momos</li>
-        <li>Fried Momos</li>
-      </ul>
+    <h2>Momos</h2>
+    <div class="items">
+      <div class="item"><h3>Veg Momos</h3><p>₹120</p><button>Order Now</button></div>
+      <div class="item"><h3>Chicken Steam Momos</h3><p>₹140</p><button>Order Now</button></div>
+      <div class="item"><h3>Chicken Fried Momos</h3><p>₹150</p><button>Order Now</button></div>
     </div>
   </section>
 
-  <section id="contact">
+  <section class="contact">
     <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p>📍 <strong>Location:</strong> <a href="https://www.google.com/maps/place/Sompeta" target="_blank">Sompeta Main Road</a></p>
-      <p>📞 <strong>Phone:</strong> <a href="tel:7569288411">7569288411</a>, <a href="tel:9494020127">9494020127</a></p>
-      <p>📘 <strong>Facebook:</strong> <a href="https://www.facebook.com/dhanadcruz" target="_blank">Dhana D'Cruz</a></p>
-      <p>📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/dhanadcruz" target="_blank">Dhana D'Cruz</a></p>
-    </div>
+    <p><strong>Phone:</strong> <a href="tel:7569288411">7569288411</a>, <a href="tel:9494020127">9494020127</a></p>
+    <p><strong>Location:</strong> <a href="https://maps.google.com/?q=Sompeta" target="_blank">Sompeta Main Road</a></p>
+    <p><strong>Social Media:</strong> 
+      <a href="https://facebook.com/dhana.dcruz" target="_blank">Facebook</a> | 
+      <a href="https://instagram.com/dhana.dcruz" target="_blank">Instagram</a>
+    </p>
   </section>
 
   <footer>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/dhanadcruz" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/dhanadcruz" target="_blank">Instagram</a>
-    </div>
     <p>&copy; 2025 DSR Food Court. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
