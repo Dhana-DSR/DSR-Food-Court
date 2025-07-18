@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +7,15 @@
   <meta name="description" content="DSR Food Court - Best Biryani, Chicken Dishes, and Momos in Sompeta">
   <title>DSR Food Court | Sompeta</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <h1>DSR Food Court</h1>
     <p>Where Taste Meets Tradition</p>
   </header>
 
-  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="#menu">Menu</a></li>
@@ -26,85 +26,80 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
   <section id="hero">
     <h2>Authentic Biryani, Chicken, and Momos</h2>
     <p>Fresh. Fast. Full of Flavor.</p>
   </section>
 
-  <!-- Menu Section -->
   <section id="menu">
     <h2>Our Menu</h2>
 
     <h3>Biryani Specials</h3>
-    <ul>
-      <li><strong>DSR Special Biryani</strong> – Chicken, mutton, egg mix with special masala – ₹250</li>
-      <li><strong>Chicken Dum Biryani</strong> – Marinated chicken with layered rice – ₹180</li>
-      <li><strong>Mutton Biryani</strong> – Tender mutton cooked with spices – ₹240</li>
-      <li><strong>Egg Biryani</strong> – Rice with eggs & masala – ₹150</li>
-      <li><strong>Paneer Biryani</strong> – Vegetarian biryani with paneer – ₹160</li>
-    </ul>
+    <div class="menu-item">
+      <img src="images/biryani.jpg" alt="Biryani">
+      <div><strong>DSR Special Biryani</strong><br>₹250</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/chicken_biryani.jpg" alt="Chicken Biryani">
+      <div><strong>Chicken Dum Biryani</strong><br>₹180</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/mutton_biryani.jpg" alt="Mutton Biryani">
+      <div><strong>Mutton Biryani</strong><br>₹240</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/egg_biryani.jpg" alt="Egg Biryani">
+      <div><strong>Egg Biryani</strong><br>₹150</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/paneer_biryani.jpg" alt="Paneer Biryani">
+      <div><strong>Paneer Biryani</strong><br>₹160</div>
+    </div>
 
     <h3>Chicken Delights</h3>
-    <ul>
-      <li>Chicken Lollipop – ₹160 (6 pcs)</li>
-      <li>Chicken 65 – ₹150</li>
-      <li>Lemon Chicken – ₹160</li>
-      <li>Garlic Chicken – ₹160</li>
-      <li>Honey Chicken – ₹170</li>
-      <li>Chicken Manchurian – ₹170</li>
-    </ul>
+    <div class="menu-item"><img src="images/lollipop.jpg"><div>Chicken Lollipop – ₹160</div></div>
+    <div class="menu-item"><img src="images/chicken65.jpg"><div>Chicken 65 – ₹150</div></div>
+    <div class="menu-item"><img src="images/lemon_chicken.jpg"><div>Lemon Chicken – ₹160</div></div>
+    <div class="menu-item"><img src="images/garlic_chicken.jpg"><div>Garlic Chicken – ₹160</div></div>
+    <div class="menu-item"><img src="images/honey_chicken.jpg"><div>Honey Chicken – ₹170</div></div>
+    <div class="menu-item"><img src="images/manchurian.jpg"><div>Chicken Manchurian – ₹170</div></div>
 
     <h3>Momos</h3>
-    <ul>
-      <li>Chicken Momos (Steamed) – ₹100</li>
-      <li>Chicken Momos (Fried) – ₹110</li>
-      <li>Veg Momos (Steamed) – ₹80</li>
-      <li>Tandoori Momos – ₹120</li>
-    </ul>
+    <div class="menu-item"><img src="images/steamed_momo.jpg"><div>Chicken Momos (Steamed) – ₹100</div></div>
+    <div class="menu-item"><img src="images/fried_momo.jpg"><div>Chicken Momos (Fried) – ₹110</div></div>
+    <div class="menu-item"><img src="images/veg_momo.jpg"><div>Veg Momos (Steamed) – ₹80</div></div>
+    <div class="menu-item"><img src="images/tandoori_momo.jpg"><div>Tandoori Momos – ₹120</div></div>
   </section>
 
-  <!-- Order Section -->
   <section id="order">
     <h2>Order Online</h2>
-    <p>Select your favorite dishes from the menu and place your order with ease.</p>
-    <ul>
-      <li>✅ Real-time order tracking</li>
-      <li>✅ Pay via UPI, Card, or Cash on Delivery</li>
-      <li>✅ Delivery available in Sompeta and nearby areas</li>
-    </ul>
-    <button onclick="alert('Online ordering coming soon!')">Order Now</button>
+    <p>Select your favorite dishes and place your order with ease.</p>
+    <button onclick="submitOrder()">Place Order</button>
   </section>
 
-  <!-- Location -->
   <section id="location">
     <h2>Visit Us</h2>
-    <p>📍 Sompeta Main Road</p>
-    <a href="https://www.google.com/maps/search/Sompeta+Main+Road" target="_blank">View on Map</a>
+    <p>Sompeta Main Road</p>
+    <a href="https://www.google.com/maps/search/Sompeta+Main+Road" target="_blank">📍 View on Map</a>
   </section>
 
-  <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>📱 Mobile: <a href="tel:+917569288411">7569288411</a>, <a href="tel:+919494020127">9494020127</a></p>
-    <p>📞 WhatsApp support available</p>
+    <p>📱 <a href="tel:+917569288411">7569288411</a>, <a href="tel:+919494020127">9494020127</a></p>
   </section>
 
-  <!-- Social Media -->
   <section id="social">
     <h2>Follow Us</h2>
-    <p>Get updates, offers, and more:</p>
-    <ul>
-      <li><a href="https://www.facebook.com/dhanadcruz" target="_blank">Facebook</a></li>
-      <li><a href="https://www.instagram.com/dhanadcruz" target="_blank">Instagram</a></li>
-    </ul>
-    <!-- Note: Account is listed under 'dhana d’cruz' but not shown in visible text -->
+    <a href="https://www.facebook.com/dhanadcruz" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com/dhanadcruz" target="_blank">Instagram</a>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 DSR Food Court. All rights reserved.</p>
-    <p><a href="#">Terms</a> | <a href="#">Privacy Policy</a></p>
   </footer>
 
 </body>
