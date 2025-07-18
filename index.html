@@ -1,57 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Best Biryani and Chicken Spot in Sompeta – Order Online from DSR Food Court">
-  <title>DSR Food Court</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSR Food Court | Sompeta's Best Biryani & Chicken</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>DSR Food Court</h1>
-    <p>Delicious Biryani | Chicken Specials | Momos</p>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">DSR Food Court</div>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to DSR Food Court</h1>
+            <p>Enjoy the best biryanis, chicken dishes, and momos right here in Sompeta.<br>Order online and taste the difference!</p>
+            <a href="#menu" class="hero-btn">See Menu</a>
+        </div>
+    </header>
 
-  <section class="menu">
-    <h2>Biryani Menu</h2>
-    <div class="items">
-      <div class="item"><h3>Chicken Biryani</h3><p>₹180</p><button>Order Now</button></div>
-      <div class="item"><h3>Mutton Biryani</h3><p>₹250</p><button>Order Now</button></div>
-      <div class="item"><h3>Egg Biryani</h3><p>₹150</p><button>Order Now</button></div>
-      <div class="item"><h3>Veg Biryani</h3><p>₹130</p><button>Order Now</button></div>
-      <div class="item"><h3>Special Family Pack</h3><p>₹499</p><button>Order Now</button></div>
-    </div>
+    <main>
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Our Menu</h2>
 
-    <h2>Chicken Items</h2>
-    <div class="items">
-      <div class="item"><h3>Tandoori Chicken</h3><p>₹220</p><button>Order Now</button></div>
-      <div class="item"><h3>Chicken 65</h3><p>₹180</p><button>Order Now</button></div>
-      <div class="item"><h3>Chicken Lollipop</h3><p>₹190</p><button>Order Now</button></div>
-      <div class="item"><h3>Grilled Chicken</h3><p>₹240</p><button>Order Now</button></div>
-      <div class="item"><h3>Chicken Wings</h3><p>₹170</p><button>Order Now</button></div>
-    </div>
+            <div class="menu-category">
+                <h3>Biryani Varieties</h3>
+                <div class="menu-items">
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Hyderabadi Chicken Biryani">
+                        <div class="item-info">
+                            <h4>Hyderabadi Chicken Biryani</h4>
+                            <p>Authentic basmati rice cooked with succulent chicken and aromatic spices.</p>
+                            <span class="price">₹220</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
 
-    <h2>Momos</h2>
-    <div class="items">
-      <div class="item"><h3>Veg Momos</h3><p>₹120</p><button>Order Now</button></div>
-      <div class="item"><h3>Chicken Steam Momos</h3><p>₹140</p><button>Order Now</button></div>
-      <div class="item"><h3>Chicken Fried Momos</h3><p>₹150</p><button>Order Now</button></div>
-    </div>
-  </section>
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=400&q=80" alt="Mutton Biryani">
+                        <div class="item-info">
+                            <h4>Mutton Biryani</h4>
+                            <p>Tender mutton pieces slow-cooked with saffron-infused rice.</p>
+                            <span class="price">₹250</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> <a href="tel:7569288411">7569288411</a>, <a href="tel:9494020127">9494020127</a></p>
-    <p><strong>Location:</strong> <a href="https://maps.google.com/?q=Sompeta" target="_blank">Sompeta Main Road</a></p>
-    <p><strong>Social Media:</strong> 
-      <a href="https://facebook.com/dhana.dcruz" target="_blank">Facebook</a> | 
-      <a href="https://instagram.com/dhana.dcruz" target="_blank">Instagram</a>
-    </p>
-  </section>
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1519864600265-abb2286f93c3?auto=format&fit=crop&w=400&q=80" alt="Veg Biryani">
+                        <div class="item-info">
+                            <h4>Veg Biryani</h4>
+                            <p>Garden-fresh vegetables, flavorful rice, and a delicate blend of spices.</p>
+                            <span class="price">₹180</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
 
-  <footer>
-    <p>&copy; 2025 DSR Food Court. All rights reserved.</p>
-  </footer>
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1519864600265-abb2286f93c3?auto=format&fit=crop&w=400&q=80" alt="Egg Biryani">
+                        <div class="item-info">
+                            <h4>Egg Biryani</h4>
+                            <p>Boiled eggs cooked with masala and fragrant rice.</p>
+                            <span class="price">₹150</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Chicken Specialties</h3>
+                <div class="menu-items">
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1519864600265-abb2286f93c3?auto=format&fit=crop&w=400&q=80" alt="Chicken 65">
+                        <div class="item-info">
+                            <h4>Chicken 65</h4>
+                            <p>Crispy, spicy deep-fried chicken bites tossed with curry leaves.</p>
+                            <span class="price">₹180</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Tandoori Chicken">
+                        <div class="item-info">
+                            <h4>Tandoori Chicken</h4>
+                            <p>Chicken marinated with yogurt and spices, grilled to perfection.</p>
+                            <span class="price">₹200</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Chicken Curry">
+                        <div class="item-info">
+                            <h4>Chicken Curry</h4>
+                            <p>Home-style chicken curry rich with rustic spices.</p>
+                            <span class="price">₹160</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=400&q=80" alt="Butter Chicken">
+                        <div class="item-info">
+                            <h4>Butter Chicken</h4>
+                            <p>Juicy chicken in creamy tomato gravy with butter.</p>
+                            <span class="price">₹220</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Momos</h3>
+                <div class="menu-items">
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Chicken Momos">
+                        <div class="item-info">
+                            <h4>Chicken Momos</h4>
+                            <p>Steamed dumplings filled with flavorful chicken mix.</p>
+                            <span class="price">₹100</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=400&q=80" alt="Veg Momos">
+                        <div class="item-info">
+                            <h4>Veg Momos</h4>
+                            <p>Steamed dumplings stuffed with seasoned vegetables.</p>
+                            <span class="price">₹80</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=400&q=80" alt="Fried Momos">
+                        <div class="item-info">
+                            <h4>Fried Momos</h4>
+                            <p>Crispy exterior, juicy filling (chicken or veg).</p>
+                            <span class="price">₹110</span>
+                            <a href="#order" class="order-btn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Section -->
+        <section id="order">
+            <h2>Order Now</h2>
+            <p>
+                Browse our menu, select your favourite items, and click "Order Now". We accept cash and UPI.<br>
+                Delivery available in Sompeta and nearby areas!
+            </p>
+            <!-- Simple order form as a placeholder (can be replaced by a real system later) -->
+            <form class="order-form">
+                <label for="food">Your Order:</label>
+                <input type="text" id="food" name="food" placeholder="e.g. 2x Hyderabadi Chicken Biryani, 1x Veg Momos" required>
+
+                <label for="phone">Your Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit number">
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="2" required></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <p>
+                    <strong>Mobile:</strong>
+                    <a href="tel:7569288411">7569288411</a>,
+                    <a href="tel:9494020127">9494020127</a>
+                </p>
+                <p>
+                    <strong>Facebook:</strong>
+                    <a href="https://facebook.com/dhana.dcruz" target="_blank">dhana d’cruz</a>
+                </p>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/dhana.dcruz" target="_blank">dhana d’cruz</a>
+                </p>
+                <p>
+                    <strong>Location:</strong>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Sompeta" target="_blank">Sompeta, Andhra Pradesh</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 DSR Food Court. All rights reserved.</p>
+    </footer>
 </body>
 </html>
