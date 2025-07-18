@@ -6,7 +6,7 @@
     <title>DSR Food Court | Sompeta's Best Biryani & Chicken</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Use a stylish bold font, e.g., 'Fredoka One' for logo -->
+    <!-- Stylish bold font for logo -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
     body {
@@ -25,7 +25,6 @@
         padding: 18px 8vw;
     }
     .logo {
-        /* New font for logo, distinct background */
         font-family: 'Fredoka One', cursive, sans-serif;
         font-size: 2.3em;
         font-weight: bold;
@@ -53,8 +52,16 @@
     nav ul li a:hover {
         color: #ffd700;
     }
-    /* ...rest of your styles remain unchanged... */
-    /* Update your main content, cards, forms, etc. as in previous samples */
+    main {
+        padding: 40px 8vw;
+    }
+    h2, h3 {
+        color: #931313;
+        margin-bottom: 16px;
+    }
+    .menu-category {
+        margin-bottom: 38px;
+    }
     .menu-items {
         display: flex;
         flex-wrap: wrap;
@@ -122,6 +129,84 @@
         background: #ffd700;
         color: #931313;
     }
+    #order {
+        margin-top: 36px;
+        margin-bottom: 38px;
+        background: #fffbea;
+        border-radius: 10px;
+        padding: 32px 30px;
+        box-shadow: 0 2px 9px #ffd70033;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .order-form {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        margin-top: 23px;
+    }
+    .order-form input, .order-form textarea {
+        padding: 8px;
+        border: 1.5px solid #c2a834;
+        border-radius: 6px;
+        font-size: 1em;
+    }
+    .order-form button {
+        background: #931313;
+        color: #fff;
+        border: none;
+        padding: 11px 22px;
+        border-radius: 30px;
+        font-size: 1.05em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background .2s;
+    }
+    .order-form button:hover {
+        background: #ffd700;
+        color: #931313;
+    }
+    #contact {
+        margin: 56px 0 28px 0;
+    }
+    .contact-details p {
+        margin: 10px 0;
+        font-size: 1em;
+    }
+    .contact-details a {
+        color: #931313;
+        text-decoration: underline;
+        transition: color .15s;
+    }
+    .contact-details a:hover {
+        color: #ffd700;
+    }
+    /* Hide Facebook and Instagram names, show only icons */
+    .social-icons {
+        display: flex;
+        gap: 24px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .social-icons a {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        filter: grayscale(0.25);
+        transition: filter .15s;
+    }
+    .social-icons a.facebook {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg');
+    }
+    .social-icons a.instagram {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+    }
+    .social-icons a:hover {
+        filter: grayscale(0) brightness(1.3);
+    }
     footer {
         background: #931313;
         color: #fff;
@@ -161,135 +246,5 @@
             <ul>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#order">Order Now</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+                <li><a href="#contact">Contact Us</a></
 
-    <main>
-        <section id="menu">
-            <h2>Our Menu</h2>
-            <div class="menu-category">
-                <h3>Biryani Varieties</h3>
-                <div class="menu-items">
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Chicken_Biryani_Indian_Cuisine.jpg/400px-Chicken_Biryani_Indian_Cuisine.jpg" alt="Hyderabadi Chicken Biryani">
-                        <div class="item-info">
-                            <h4>Hyderabadi Chicken Biryani</h4>
-                            <p>Authentic basmati rice cooked with succulent chicken and aromatic spices.</p>
-                            <span class="price">₹220</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mutton_biryani.jpg/400px-Mutton_biryani.jpg" alt="Mutton Biryani">
-                        <div class="item-info">
-                            <h4>Mutton Biryani</h4>
-                            <p>Tender mutton pieces slow-cooked with saffron-infused rice.</p>
-                            <span class="price">₹250</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Vegetable_Biryani.jpg/400px-Vegetable_Biryani.jpg" alt="Veg Biryani">
-                        <div class="item-info">
-                            <h4>Veg Biryani</h4>
-                            <p>Garden-fresh vegetables, flavorful rice, and a delicate blend of spices.</p>
-                            <span class="price">₹180</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Egg_Biryani.jpg/400px-Egg_Biryani.jpg" alt="Egg Biryani">
-                        <div class="item-info">
-                            <h4>Egg Biryani</h4>
-                            <p>Boiled eggs cooked with masala and fragrant rice.</p>
-                            <span class="price">₹150</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-category">
-                <h3>Chicken Specialties</h3>
-                <div class="menu-items">
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Chicken_65,_a_Deep_Fried_Spicy_Indian_Meal.jpg/400px-Chicken_65,_a_Deep_Fried_Spicy_Indian_Meal.jpg" alt="Chicken 65">
-                        <div class="item-info">
-                            <h4>Chicken 65</h4>
-                            <p>Crispy, spicy deep-fried chicken bites tossed with curry leaves.</p>
-                            <span class="price">₹180</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Tandoori_chicken_01.jpg/400px-Tandoori_chicken_01.jpg" alt="Tandoori Chicken">
-                        <div class="item-info">
-                            <h4>Tandoori Chicken</h4>
-                            <p>Chicken marinated with yogurt and spices, grilled to perfection.</p>
-                            <span class="price">₹200</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Indian_Chicken_Curry_from_Mumbai.jpg/400px-Indian_Chicken_Curry_from_Mumbai.jpg" alt="Chicken Curry">
-                        <div class="item-info">
-                            <h4>Chicken Curry</h4>
-                            <p>Home-style chicken curry rich with rustic spices.</p>
-                            <span class="price">₹160</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Butter_chicken_masala_Indian_cuisine.jpg/400px-Butter_chicken_masala_Indian_cuisine.jpg" alt="Butter Chicken">
-                        <div class="item-info">
-                            <h4>Butter Chicken</h4>
-                            <p>Juicy chicken in creamy tomato gravy with butter.</p>
-                            <span class="price">₹220</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-category">
-                <h3>Momos</h3>
-                <div class="menu-items">
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Chicken_momos_01.jpg/400px-Chicken_momos_01.jpg" alt="Chicken Momos">
-                        <div class="item-info">
-                            <h4>Chicken Momos</h4>
-                            <p>Steamed dumplings filled with flavorful chicken mix.</p>
-                            <span class="price">₹100</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Vegetable_momos.jpg/400px-Vegetable_momos.jpg" alt="Veg Momos">
-                        <div class="item-info">
-                            <h4>Veg Momos</h4>
-                            <p>Steamed dumplings stuffed with seasoned vegetables.</p>
-                            <span class="price">₹80</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Fried_momo_02.jpg/400px-Fried_momo_02.jpg" alt="Fried Momos">
-                        <div class="item-info">
-                            <h4>Fried Momos</h4>
-                            <p>Crispy exterior, juicy filling (chicken or veg).</p>
-                            <span class="price">₹110</span>
-                            <a href="#order" class="order-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Order and Contact sections remain as in the previous code, with all styles and links intact -->
-    </main>
-
-    <footer>
-        <p>© 2025 DSR Food Court. All rights reserved.</p>
-    </footer>
-</body>
-</html>
