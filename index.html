@@ -1,250 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSR Food Court | Sompeta's Best Biryani & Chicken</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Stylish bold font for logo -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSR Food Court - Sompeta</title>
+  <style>
     body {
-        font-family: 'Segoe UI', Arial, sans-serif;
-        background: #f9f9f9;
-        color: #232323;
-        margin: 0;
-        padding: 0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+    }
+    header {
+      background-color: #b22222;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
     nav {
-        background: #931313;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 18px 8vw;
+      background: #ff4500;
+      padding: 10px;
+      text-align: center;
     }
-    .logo {
-        font-family: 'Fredoka One', cursive, sans-serif;
-        font-size: 2.3em;
-        font-weight: bold;
-        letter-spacing: 2px;
-        background: linear-gradient(90deg, #ffd700 70%, #ffefb7 100%);
-        color: #931313;
-        padding: 10px 30px;
-        border-radius: 16px;
-        box-shadow: 2px 3px 18px #ffd70055;
-        margin-right: 16px;
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 24px;
-        margin: 0;
-        padding: 0;
+    section {
+      padding: 40px;
     }
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color .2s;
-    }
-    nav ul li a:hover {
-        color: #ffd700;
-    }
-    main {
-        padding: 40px 8vw;
-    }
-    h2, h3 {
-        color: #931313;
-        margin-bottom: 16px;
+    h2 {
+      color: #b22222;
     }
     .menu-category {
-        margin-bottom: 38px;
+      margin-bottom: 30px;
     }
     .menu-items {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 28px;
-        margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    .item-card {
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px #aab0ba33;
-        width: 270px;
-        display: flex;
-        flex-direction: column;
-        transition: transform 0.2s;
-        min-height: 430px;
-        overflow: hidden;
+    .item {
+      width: 200px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .item-card:hover {
-        transform: scale(1.03);
-        box-shadow: 0 8px 25px #93131333;
+    .item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
     }
-    .item-card img {
-        width: 100%;
-        height: 165px;
-        object-fit: cover;
-        border-bottom: 2px solid #ffd70044;
+    .item h4 {
+      margin: 10px;
     }
-    .item-info {
-        padding: 18px 15px 16px 15px;
-        text-align: left;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .item-info h4 {
-        font-size: 1.15em;
-        color: #931313;
-        margin-bottom: 7px;
-    }
-    .item-info p {
-        font-size: .99em;
-        color: #444;
-        margin-bottom: 10px;
-    }
-    .price {
-        color: #ffd700;
-        font-weight: 700;
-        margin-bottom: 8px;
-        display: inline-block;
-    }
-    .order-btn {
-        display: inline-block;
-        background: #931313;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        padding: 8px 18px;
-        border-radius: 6px;
-        margin-top: 10px;
-        transition: background .2s, color .2s;
-        align-self: flex-start;
-    }
-    .order-btn:hover {
-        background: #ffd700;
-        color: #931313;
-    }
-    #order {
-        margin-top: 36px;
-        margin-bottom: 38px;
-        background: #fffbea;
-        border-radius: 10px;
-        padding: 32px 30px;
-        box-shadow: 0 2px 9px #ffd70033;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .order-form {
-        display: flex;
-        flex-direction: column;
-        gap: 13px;
-        margin-top: 23px;
-    }
-    .order-form input, .order-form textarea {
-        padding: 8px;
-        border: 1.5px solid #c2a834;
-        border-radius: 6px;
-        font-size: 1em;
-    }
-    .order-form button {
-        background: #931313;
-        color: #fff;
-        border: none;
-        padding: 11px 22px;
-        border-radius: 30px;
-        font-size: 1.05em;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background .2s;
-    }
-    .order-form button:hover {
-        background: #ffd700;
-        color: #931313;
-    }
-    #contact {
-        margin: 56px 0 28px 0;
-    }
-    .contact-details p {
-        margin: 10px 0;
-        font-size: 1em;
-    }
-    .contact-details a {
-        color: #931313;
-        text-decoration: underline;
-        transition: color .15s;
-    }
-    .contact-details a:hover {
-        color: #ffd700;
-    }
-    /* Hide Facebook and Instagram names, show only icons */
-    .social-icons {
-        display: flex;
-        gap: 24px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-    .social-icons a {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        filter: grayscale(0.25);
-        transition: filter .15s;
-    }
-    .social-icons a.facebook {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg');
-    }
-    .social-icons a.instagram {
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
-    }
-    .social-icons a:hover {
-        filter: grayscale(0) brightness(1.3);
+    .item p {
+      margin: 0 10px 10px;
+      color: #555;
     }
     footer {
-        background: #931313;
-        color: #fff;
-        text-align: center;
-        padding: 18px 0;
-        font-size: 1em;
-        letter-spacing: .5px;
-        margin-top: 30px;
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
-    @media (max-width: 900px) {
-        nav {
-            flex-direction: column;
-            gap: 12px;
-            padding: 15px 4vw;
-        }
-        .menu-items {
-            justify-content: center;
-        }
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
     }
-    @media (max-width: 600px) {
-        .menu-items {
-            flex-direction: column;
-            align-items: center;
-            gap: 19px;
-        }
-        .item-card {
-            width: 98vw;
-            max-width: 350px;
-        }
+    .order-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #b22222;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
     }
-    </style>
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">DSR Food Court</div>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#order">Order Now</a></li>
-                <li><a href="#contact">Contact Us</a></
 
+  <header>
+    <h1>DSR Food Court</h1>
+    <p>Sompeta | Specializing in Biryanis, Chicken & Momos</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-category">
+      <h3>Biryanis</h3>
+      <div class="menu-items">
+        <div class="item">
+          <img src="https://via.placeholder.com/200x150?text=Chicken+Biryani" alt="Chicken Biryani">
+          <h4>Chicken Biryani</h4>
+          <p>Spicy and aromatic biryani with tender chicken pieces.</p>
+        </div>
+        <div class="item">
+          <img src="https://via.placeholder.com/200x150?text=Mutton+Biryani" alt="Mutton Biryani">
+          <h4>Mutton Biryani</h4>
+          <p>Rich and flavorful biryani made with succulent mutton.</p>
+        </div>
+        <!-- Add more biryanis -->
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Chicken Items</h3>
+      <div class="menu-items">
+        <div class="item">
+          <img src="https://via.placeholder.com/200x150?text=Chicken+65" alt="Chicken 65">
+          <h4>Chicken 65</h4>
+          <p>Deep-fried spicy chicken starter, a customer favorite.</p>
+        </div>
+        <div class="item">
+          <img src="https://via.placeholder.com/200x150?text=Grilled+Chicken" alt="Grilled Chicken">
+          <h4>Grilled Chicken</h4>
+          <p>Juicy grilled chicken served with mint chutney.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Momos</h3>
+      <div class="menu-items">
+        <div class="item">
+          <img src="https://via.placeholder.com/200x150?text=Chicken+Momos" alt="Chicken Momos">
+          <h4>Chicken Momos</h4>
+          <p>Steamed dumplings stuffed with chicken and spices.</p>
+        </div>
+        <div class="item">
+          <img src="https://via.placeholder.com/200x150?text=Veg+Momos" alt="Veg Momos">
+          <h4>Veg Momos</h4>
+          <p>Vegetarian dumplings served hot with spicy chutney.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Order Now</h2>
+    <p>Click below to place your order or call us directly.</p>
+    <a href="tel:7569288411" class="order-btn">Call Now: 7569288411</a><br>
+    <a href="tel:9494020127" class="order-btn">Call Now: 9494020127</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Social</h2>
+    <p>Location: <a href="https://www.google.com/maps/search/?api=1&query=Sompeta" target="_blank">Sompeta</a></p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/dhana.dcruz" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/dhana.dcruz" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DSR Food Court. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
