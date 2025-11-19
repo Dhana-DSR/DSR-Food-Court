@@ -1,104 +1,200 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="DSR Food Court - Best Biryani, Chicken Dishes, and Momos in Sompeta">
-  <title>DSR Food Court | Sompeta</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/logo.png" type="image/png">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Royal Photography Studio Sompeta | Cinematic Wedding Photographers</title>
+  <meta name="description" content="Royal Photography Studio by D. Jani — cinematic wedding photography, candid shoots, drone coverage and premium albums in Sompeta, Srikakulam." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{
+      --maroon:#7A1123;
+      --gold:#D9A441;
+      --ivory:#F7F3EE;
+      --char:#222222;
+      --muted:#777;
+      --maxw:1100px;
+      --radius:10px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--ivory),#fff);color:var(--char);-webkit-font-smoothing:antialiased}
+    header{background:linear-gradient(90deg, rgba(122,17,35,0.95), rgba(217,164,65,0.95));color:white;padding:22px 16px;position:sticky;top:0;z-index:30}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:52px;height:52px;border-radius:8px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav{margin-left:auto}
+    nav a{color:white;text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:flex;gap:32px;align-items:center;padding:56px 0}
+    .hero-left{flex:1}
+    h1{font-family: "Playfair Display", Georgia, serif;font-size: clamp(28px, 4.2vw, 44px);margin:0 0 12px}
+    p.lead{color:#fffddf;max-width:720px;margin:0 0 20px;font-size:1.06rem}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--char);color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:transparent;border:2px solid rgba(255,255,255,0.85);color:white}
+    .hero-right{flex:1;display:flex;justify-content:center}
+    .hero-card{width:320px;height:420px;border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(0,0,0,0.05));box-shadow:0 10px 30px rgba(0,0,0,0.15);display:flex;flex-direction:column;overflow:hidden}
+    .hero-card img{width:100%;height:220px;object-fit:cover}
+    .hero-card .meta{padding:16px}
+    .meta h3{margin:0;font-size:18px;color:var(--ivory)}
+    section{padding:40px 0}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(31,31,31,0.06)}
+    .card h4{margin:0 0 8px;color:var(--maroon)}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{background:linear-gradient(180deg,#fff,#faf7f4);padding:14px;border-radius:10px;flex:1;min-width:200px}
+    .portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .portfolio img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+    .cta-strip{background:var(--maroon);color:white;padding:18px;border-radius:12px;text-align:center}
+    footer{padding:28px 0;color:var(--muted)}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
+    @media(max-width:880px){.hero{flex-direction:column}.two-col{grid-template-columns:1fr}.hero-right{order:-1}.hero-card{width:100%;height:300px}nav{display:none}}
+  </style>
 </head>
 <body>
-
   <header>
-    <img src="images/logo.png" alt="DSR Logo" class="logo">
-    <h1>DSR Food Court</h1>
-    <p>Where Taste Meets Tradition</p>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo">RPS</div>
+        <div>
+          <div style="font-weight:800">Royal Photography Studio</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.9)">By D. Jani — Sompeta, Srikakulam</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#packages">Packages</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#menu"><i class="fas fa-utensils"></i> Menu</a></li>
-      <li><a href="#order"><i class="fas fa-shopping-cart"></i> Order</a></li>
-      <li><a href="#location"><i class="fas fa-map-marker-alt"></i> Location</a></li>
-      <li><a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a></li>
-      <li><a href="#social"><i class="fas fa-hashtag"></i> Social</a></li>
-    </ul>
-  </nav>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Capture Your Wedding Like Royalty</h1>
+        <p class="lead">Royal Photography Studio — Cinematic wedding photography & films crafted with emotion, elegance, and timeless beauty. Led by proprietor <strong>D. Jani</strong> in Palasapuram, Sompeta.</p>
+        <div class="cta">
+          <a class="btn" href="contact.html#book">Book Now</a>
+          <a class="btn secondary" href="#portfolio">View Portfolio</a>
+          <a class="btn" href="https://wa.me/9876543210" target="_blank">WhatsApp: 9876543210</a>
+        </div>
+      </div>
 
-  <section id="hero">
-    <h2>Authentic Biryani, Chicken, and Momos</h2>
-    <p>Fresh. Fast. Full of Flavor.</p>
-  </section>
+      <div class="hero-right">
+        <div class="hero-card" aria-hidden="false">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0f5f1b9a1b6e3d6f4a1f2f3e2a7d8b9f" alt="Wedding couple cinematic">
+          <div class="meta" style="color:#fff">
+            <h3>Royal Moments — Cinematic Stories</h3>
+            <p style="color:rgba(255,255,255,0.9);margin-top:8px">Candid shots • Drone • Same-day highlights</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="menu">
-    <h2>🍽️ Our Menu</h2>
-    <h3>Biryani Specials</h3>
-    <ul>
-      <li><img src="images/biryani1.jpg" alt="DSR Special Biryani"><strong>DSR Special Biryani</strong> – Chicken, mutton, egg mix – ₹250</li>
-      <li><img src="images/biryani2.jpg" alt="Chicken Dum Biryani"><strong>Chicken Dum Biryani</strong> – ₹180</li>
-      <li><img src="images/biryani3.jpg" alt="Mutton Biryani"><strong>Mutton Biryani</strong> – ₹240</li>
-      <li><img src="images/biryani4.jpg" alt="Egg Biryani"><strong>Egg Biryani</strong> – ₹150</li>
-      <li><img src="images/biryani5.jpg" alt="Paneer Biryani"><strong>Paneer Biryani</strong> – ₹160</li>
-    </ul>
-    <h3>Chicken Delights</h3>
-    <ul>
-      <li><img src="images/chicken1.jpg" alt="Chicken Lollipop">Chicken Lollipop – ₹160</li>
-      <li><img src="images/chicken2.jpg" alt="Chicken 65">Chicken 65 – ₹150</li>
-      <li><img src="images/chicken3.jpg" alt="Lemon Chicken">Lemon Chicken – ₹160</li>
-    </ul>
-    <h3>Momos</h3>
-    <ul>
-      <li><img src="images/momo1.jpg" alt="Chicken Momos">Chicken Momos – ₹100</li>
-      <li><img src="images/momo2.jpg" alt="Fried Chicken Momos">Fried Chicken Momos – ₹110</li>
-    </ul>
-  </section>
+    <section id="services">
+      <div class="two-col">
+        <div>
+          <h2 style="margin-top:0">Our Services</h2>
+          <div class="services" aria-label="Services list">
+            <div class="card">
+              <h4>Wedding Photography</h4>
+              <p>Full candid & traditional coverage, high-quality edits and albums.</p>
+            </div>
+            <div class="card">
+              <h4>Cinematic Films</h4>
+              <p>Highlight films, full ceremony edits, 4K grading and music licensing.</p>
+            </div>
+            <div class="card">
+              <h4>Drone Shots</h4>
+              <p>Aerial cinematography to elevate your wedding visuals.</p>
+            </div>
+            <div class="card">
+              <h4>Pre-Wedding & Portraits</h4>
+              <p>Styled pre-wedding shoots and editorial couple portraits.</p>
+            </div>
+          </div>
+        </div>
 
-  <section id="order">
-    <h2>🛒 Order Online</h2>
-    <p>Choose your item from the dropdown below and place your order.</p>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf_fake_form" method="POST" target="_blank">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <select name="item" required>
-        <option value="">-- Select Item --</option>
-        <option>DSR Special Biryani</option>
-        <option>Chicken Dum Biryani</option>
-        <option>Mutton Biryani</option>
-        <option>Egg Biryani</option>
-        <option>Paneer Biryani</option>
-        <option>Chicken Lollipop</option>
-        <option>Chicken 65</option>
-        <option>Lemon Chicken</option>
-        <option>Chicken Momos</option>
-        <option>Fried Chicken Momos</option>
-      </select>
-      <input type="tel" name="phone" placeholder="Your Phone Number" required>
-      <button type="submit">Place Order</button>
-    </form>
-  </section>
+        <aside>
+          <div class="card">
+            <h4>Quick Info</h4>
+            <p style="margin:8px 0"><strong>Owner:</strong> D. Jani</p>
+            <p style="margin:8px 0"><strong>Address:</strong><br>Near Chinthamani Devi Temple, Main Road, Palasapuram, Sompeta, Srikakulam, Andhra Pradesh</p>
+            <p style="margin:8px 0"><strong>Phone:</strong> <a href="tel:9876543210">9876543210</a></p>
+            <p style="margin:8px 0"><strong>Email:</strong> royalphotographystudioofficial@gmail.com</p>
+          </div>
+          <div class="card" style="margin-top:12px">
+            <h4>Book Your Date</h4>
+            <p>Secure your date with a 25% advance. Click below to start.</p>
+            <a class="btn" href="contact.html#book">Request Quote</a>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-  <section id="location">
-    <h2>📍 Visit Us</h2>
-    <p>DSR Food Court, Sompeta Main Road</p>
-    <a href="https://www.google.com/maps/search/Sompeta+Main+Road" target="_blank">View on Map</a>
-  </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p class="muted" style="color:var(--muted)">Selected highlights — candid moments & cinematic frames</p>
+      <div class="portfolio" style="margin-top:12px">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop" alt="portfolio1">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1000&auto=format&fit=crop" alt="portfolio2">
+        <img src="https://images.unsplash.com/photo-1518972559570-0b9b8b2f0c6e?q=80&w=1000&auto=format&fit=crop" alt="portfolio3">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1000&auto=format&fit=crop" alt="portfolio4">
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>📞 Contact Us</h2>
-    <p>Mobile: <a href="tel:+917569288411">7569288411</a>, <a href="tel:+919494020127">9494020127</a></p>
-  </section>
+    <section id="packages">
+      <h2>Popular Packages</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+        <div class="card">
+          <h4>Silver</h4>
+          <p>1 Photographer • 1 Event • 200 Edited Photos</p>
+        </div>
+        <div class="card">
+          <h4>Gold</h4>
+          <p>2 Photographers • Videographer • Drone • Highlight Film</p>
+        </div>
+        <div class="card">
+          <h4>Royal</h4>
+          <p>Full wedding coverage • 4K Film • Premium Album • LED Wall</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="social">
-    <h2>🔗 Follow Us</h2>
-    <a href="https://www.facebook.com/dhanadcruz" target="_blank">Facebook</a> |
-    <a href="https://www.instagram.com/dhanadcruz" target="_blank">Instagram</a>
-  </section>
+    <section class="cta-strip" aria-hidden="false">
+      <div class="container">
+        <strong>Ready to secure your wedding date?</strong>
+        <div style="margin-top:8px">Contact <strong>D. Jani</strong> at <a href="tel:9876543210" style="color:#fff;text-decoration:underline">9876543210</a> • WhatsApp: <a href="https://wa.me/9876543210" target="_blank" style="color:#fff;text-decoration:underline">Chat Now</a></div>
+      </div>
+    </section>
+
+    <section style="padding-bottom:60px">
+      <h3 style="margin-top:0">Testimonials</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">
+        <div class="card"><strong>“Amazing work — captured every emotion.”</strong><p style="margin:8px 0;color:var(--muted)">— Priya & Ravi</p></div>
+        <div class="card"><strong>“Professional team, delivered on time.”</strong><p style="margin:8px 0;color:var(--muted)">— Anil & Shruthi</p></div>
+        <div class="card"><strong>“Cinematic film was a showstopper.”</strong><p style="margin:8px 0;color:var(--muted)">— Rohit & Meera</p></div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 DSR Food Court. All rights reserved.</p>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong>Royal Photography Studio</strong><br>
+          <small>Near Chinthamani Devi Temple, Main Road, Palasapuram, Sompeta, Srikakulam, Andhra Pradesh</small>
+        </div>
+        <div style="text-align:right">
+          <div><a href="tel:9876543210">9876543210</a> • <a href="mailto:royalphotographystudioofficial@gmail.com">royalphotographystudioofficial@gmail.com</a></div>
+          <div style="margin-top:8px"><small>© <span id="yr"></span> Royal Photography Studio</small></div>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <script>document.getElementById('yr').innerText=new Date().getFullYear();</script>
 </body>
 </html>
