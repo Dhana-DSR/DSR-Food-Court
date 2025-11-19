@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Royal Photography Studio | Book Your Wedding</title>
+  <meta name="description" content="Contact Royal Photography Studio (D. Jani) in Sompeta. Book wedding photography, cinematic films, drone shoots, pre-wedding sessions. Call 9876543210." />
+  <style>
+    :root{--maroon:#7A1123;--gold:#D9A441;--ivory:#F7F3EE;--char:#222}
+    *{box-sizing:border-box}body{font-family:Inter,Arial;margin:0;background:#fff;color:var(--char);-webkit-font-smoothing:antialiased}
+    .container{max-width:900px;margin:0 auto;padding:20px}
+    header{background:var(--maroon);color:#fff;padding:18px}
+    header .brand{display:flex;gap:12px;align-items:center}
+    main{padding:28px 0}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    label{display:block;font-weight:700;margin:10px 0 6px}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    .btn{display:inline-block;background:var(--maroon);color:#fff;padding:12px 16px;border-radius:8px;border:none;text-decoration:none;font-weight:800;margin-top:12px}
+    .info small{color:#555}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <div style="font-weight:900">Royal Photography Studio</div>
+      <div style="margin-left:auto">Call / WhatsApp: <strong><a href="tel:9876543210" style="color:#fff;text-decoration:underline">9876543210</a></strong></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact & Booking</h1>
+    <p>Fill the form and we will get back within 24 hours. Or chat on WhatsApp for instant replies.</p>
+
+    <div class="grid">
+      <div>
+        <form id="bookingForm" class="card" action="#" method="post" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="source" value="website">
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" required placeholder="Your name">
+
+          <label for="phone">Phone Number / WhatsApp *</label>
+          <input id="phone" name="phone" required placeholder="9876543210">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com">
+
+          <label for="event">Event Type</label>
+          <select id="event" name="event">
+            <option>Wedding</option>
+            <option>Pre-Wedding</option>
+            <option>Engagement</option>
+            <option>Baby / Maternity</option>
+            <option>Other</option>
+          </select>
+
+          <label for="date">Event Date</label>
+          <input id="date" name="date" type="date">
+
+          <label for="location">Event Location</label>
+          <input id="location" name="location" placeholder="Venue / Address">
+
+          <label for="budget">Budget Range</label>
+          <select id="budget" name="budget">
+            <option>Under ₹50,000</option>
+            <option>₹50,000 - ₹1,50,000</option>
+            <option>₹1,50,000 - ₹5,00,000</option>
+            <option>Above ₹5,00,000</option>
+          </select>
+
+          <label for="files">Upload Reference Photos (optional)</label>
+          <input id="files" name="files" type="file" accept="image/*" multiple>
+
+          <label for="notes">Message / Requirements</label>
+          <textarea id="notes" name="notes" placeholder="Tell us about your event or special requests"></textarea>
+
+          <button class="btn" type="submit">Check Availability</button>
+        </form>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Royal Photography Studio</h3>
+          <p class="info"><strong>Owner:</strong> D. Jani<br>
+          <strong>Address:</strong> Near Chinthamani Devi Temple, Main Road, Palasapuram, Sompeta, Srikakulam, Andhra Pradesh<br>
+          <strong>Phone / WhatsApp:</strong> <a href="tel:9876543210">9876543210</a><br>
+          <strong>Email:</strong> <a href="mailto:royalphotographystudioofficial@gmail.com">royalphotographystudioofficial@gmail.com</a></p>
+
+          <h4>How booking works</h4>
+          <ol>
+            <li>Tell us your date & event details</li>
+            <li>We check availability & send quote</li>
+            <li>Pay 25% advance to confirm</li>
+            <li>We shoot, edit & deliver your photos & film</li>
+          </ol>
+
+          <div style="margin-top:12px">
+            <a class="btn" href="https://wa.me/9876543210" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Visit Our Studio</h4>
+          <p>Near Chinthamani Devi Temple, Main Road, Palasapuram, Sompeta</p>
+          <p><small>Working Hours: 09:00 AM – 09:00 PM (Daily)</small></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer style="background:#f6f6f6;padding:18px;text-align:center;">
+    © <span id="yr2"></span> Royal Photography Studio — All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('yr2').innerText=new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      // Basic front-end simulation (replace with real form action)
+      const name=document.getElementById('name').value||'';
+      const phone=document.getElementById('phone').value||'';
+      if(!name || !phone){ alert('Please fill required fields'); return; }
+      // For now redirect to WhatsApp prefilled message (convenient small-business flow)
+      const msg = encodeURIComponent(`Hello Royal Photography Studio, I am ${name}. I'd like to check availability for ${document.getElementById('event').value} on ${document.getElementById('date').value || 'N/A'}. Phone: ${phone}`);
+      window.open('https://wa.me/9876543210?text='+msg,'_blank');
+    }
+  </script>
+</body>
+</html>
